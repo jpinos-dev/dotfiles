@@ -1,0 +1,19 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+
+opacity = 0.35 
+blur = true 
+
+[font]
+normal.family = "DankMono Nerd Font"
+# normal.style = "Medium Italic"
+
+offset.y = 15 
+
+size = 22
