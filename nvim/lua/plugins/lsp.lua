@@ -52,8 +52,29 @@ return {
             capabilities = capabilities,
         }
 
-        -- Eslint LPS
+        -- Eslint LSP
         lspconfig.eslint.setup {
+            capabilities = capabilities,
+        }
+
+        -- Go LSP
+        lspconfig.gopls.setup {
+            capabilities = capabilities,
+        }
+
+        -- PowerShell LSP
+        lspconfig.powershell_es.setup {
+            capabilities = capabilities,
+            bundle_path = "~/Documents/Desarrollo/SDKs/PowerShellEditorServices"
+        }
+
+        -- Bash LSP
+        lspconfig.bashls.setup {
+            capabilities = capabilities,
+        }
+
+        -- Makefile LSP
+        lspconfig.makefile_ls.setup {
             capabilities = capabilities,
         }
     end,

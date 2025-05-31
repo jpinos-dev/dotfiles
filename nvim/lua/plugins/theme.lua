@@ -1,7 +1,17 @@
 return {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    config = function()
-        vim.cmd("colorscheme rose-pine")
-    end,
+    "navarasu/onedark.nvim",
+    config = function ()
+        require("onedark").setup {
+            style = "darker"
+        }
+
+        require("onedark").load()
+    end
 }
+-- return {
+--     "rose-pine/neovim",
+--     name = "rose-pine",
+--     config = function()
+--         vim.cmd("colorscheme rose-pine")
+--     end,
+-- }
