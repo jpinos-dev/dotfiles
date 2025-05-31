@@ -60,6 +60,11 @@ return {
         -- Go LSP
         lspconfig.gopls.setup {
             capabilities = capabilities,
+            settings = {
+                gopls = {
+                    semanticTokens = true,
+                }
+            }
         }
 
         -- PowerShell LSP
