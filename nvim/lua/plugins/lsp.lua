@@ -77,11 +77,6 @@ return {
         lspconfig.bashls.setup {
             capabilities = capabilities,
         }
-
-        -- Makefile LSP
-        lspconfig.makefile_ls.setup {
-            capabilities = capabilities,
-        }
     end,
     dependencies = {
         "hrsh7th/cmp-nvim-lsp"

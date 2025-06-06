@@ -7,13 +7,13 @@ padding.y = 10
 
 decorations = "Buttonless"
 
-opacity = 0.35 
+opacity = 0.95 
 blur = true 
 
 [font]
-normal.family = "DankMono Nerd Font"
+normal.family = "JetBrainsMono Nerd Font"
 # normal.style = "Medium Italic"
 
-offset.y = 15 
+offset.y = 1
 
 size = 28

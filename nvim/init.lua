@@ -1,6 +1,4 @@
-require("user.keymaps") -- Manages the custom Keymaps 
-require("user.options") -- Manages the custom options from the user
-require("user.autocmds")
+vim.g.mapleader = " " 
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -16,4 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
+require("user.keymaps") -- Manages the custom Keymaps 
+require("user.options") -- Manages the custom options from the user
+require("user.autocmds")
 

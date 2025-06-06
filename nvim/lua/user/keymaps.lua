@@ -3,8 +3,6 @@ local builtin_telescope = require("telescope.builtin")
 -- Remove previous <Space> map
 vim.keymap.set("n", "<Space>", "<Nop>", {silent = true, remap = false})
 
-vim.g.mapleader = " " 
-
 vim.keymap.set("n", "<Leader>e", ":Explore<CR>")
 
 --- Telescope Mappings
