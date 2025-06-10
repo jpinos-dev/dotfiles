@@ -1,4 +1,5 @@
 local builtin_telescope = require("telescope.builtin")
+local buffers_utils = require("utils.buffers")
 
 -- Remove previous <Space> map
 vim.keymap.set("n", "<Space>", "<Nop>", {silent = true, remap = false})
@@ -24,3 +25,17 @@ vim.keymap.set("n", "<leader>h", function() require("harpoon.ui").toggle_quick_m
 vim.keymap.set("n", "<leader>1", function() require("harpoon.ui").nav_file(1) end)
 vim.keymap.set("n", "<leader>2", function() require("harpoon.ui").nav_file(2) end)
 
+--- Copilot Mappings
+vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+})
+vim.g.copilot_no_tab_map = true
+
+-- Modified Buffers Mappings
+vim.keymap.set("n", "<leader>fm", function ()
+  buffers_utils.show_modified_buffers()
+end)
+
+-- Search ("/")
+vim.keymap.set("n", "<ESC><ESC>", ":nohlsearch<CR>", { silent = true })

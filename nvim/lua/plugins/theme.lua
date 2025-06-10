@@ -1,13 +1,21 @@
 return {
-    "navarasu/onedark.nvim",
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+    priority = 1000,
     config = function ()
-        require("onedark").setup {
-            style = "darker"
-        }
-
-        require("onedark").load()
+        require("nordic").load()
     end
 }
+-- return {
+--     "navarasu/onedark.nvim",
+--     config = function ()
+--         require("onedark").setup {
+--             style = "darker"
+--         }
+-- 
+--         require("onedark").load()
+--     end
+-- }
 -- return {
 --     "rose-pine/neovim",
 --     name = "rose-pine",

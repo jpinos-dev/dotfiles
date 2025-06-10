@@ -5,9 +5,9 @@ return {
             logging = true,
             log_level = vim.log.levels.WARN,
             filetype = {
-                dart = {
-                    require("formatter.filetypes.dart").dartformat
-                },
+                -- dart = {
+                --     require("formatter.filetypes.dart").dartformat
+                -- },
             }
         })
     end,
