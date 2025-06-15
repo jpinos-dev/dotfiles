@@ -1,0 +1,11 @@
+font-family = "Monaspace Neon"
+font-size = 20 
+font-style = "Bold"
+theme = "rose-pine-moon"
+background-opacity = 0.2
+background-blur = true
+background = "#000000"
+maximize = true
+fullscreen = true
+macos-non-native-fullscreen = visible-menu
+adjust-cell-height = 3 
