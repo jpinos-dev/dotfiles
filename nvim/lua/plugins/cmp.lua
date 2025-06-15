@@ -6,9 +6,11 @@ return {
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
+        "luckasRanarison/tailwind-tools",
     },
     config = function()
         local cmp = require("cmp")
+        local lspkind = require("lspkind")
 
         cmp.setup({
             snippet = {
@@ -30,6 +32,30 @@ return {
                 { name = 'buffer' },
                 { name = 'path' },
             }),
+            formatting = {
+                format = lspkind.cmp_format({
+                  mode = "symbol_text",
+                  maxwidth = 50,
+                  ellipsis_char = "...",
+
+                  before = function(entry, vim_item)
+                    vim_item = require("tailwind-tools.cmp").lspkind_format(entry, vim_item)
+
+                    vim_item.menu = ({
+                      nvim_lsp = "[LSP]",
+                      luasnip = "[Snippet]",
+                      buffer = "[Buffer]",
+                      path = "[Path]",
+                    })[entry.source.name]
+
+                    return vim_item
+                  end
+                })
+            },
+            window = {
+                completion = cmp.config.window.bordered(),
+                documentation = cmp.config.window.bordered(),
+            },
        })
     end,
 }

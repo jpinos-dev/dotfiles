@@ -38,4 +38,4 @@ vim.keymap.set("n", "<leader>fm", function ()
 end)
 
 -- Search ("/")
-vim.keymap.set("n", "<ESC><ESC>", ":nohlsearch<CR>", { silent = true })
+-- vim.keymap.set("n", "<ESC><ESC>", ":nohlsearch<CR>", { silent = true, remap = false })

@@ -1,4 +1,4 @@
 return {
     "xiyaowong/transparent.nvim",
-    enabled = true 
+    enabled = true
 }
