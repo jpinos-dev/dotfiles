@@ -8,7 +8,7 @@ return {
     config = function ()
         require("flutter-tools").setup {
             lsp = {
-                capabilities = require("cmp_nvim_lsp").default_capabilities(),
+                capabilities = require("blink.cmp").get_lsp_capabilities(),
                 settings = {
                     showTodos = true,
                     completeFunctionCalls = true,

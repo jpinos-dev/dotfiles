@@ -1,11 +1,12 @@
-font-family = "Monaspace Neon"
-font-size = 20 
+font-family = "IosevkaTerm Nerd Font"
+font-size = 32
 font-style = "Bold"
+font-style-italic = false
 theme = "rose-pine-moon"
-background-opacity = 0.2
+background-opacity = 0.3
 background-blur = true
-background = "#000000"
+# background = "#000000"
 maximize = true
 fullscreen = true
 macos-non-native-fullscreen = visible-menu
-adjust-cell-height = 3 
+adjust-cell-height = 10
