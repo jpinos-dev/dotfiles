@@ -1,49 +1,71 @@
 -- return {
---     "savq/melange-nvim",
---     config = function()
---         vim.cmd("colorscheme melange")
---     end
+--   "savq/melange-nvim",
+--   config = function()
+--     vim.cmd("colorscheme melange")
+--   end
 -- }
 -- return {
---     "AlexvZyl/nordic.nvim",
---     lazy = false,
---     priority = 1000,
---     config = function()
---         require("nordic").load()
---     end
+--   "rose-pine/neovim",
+--   name = "rose-pine",
+--   config = function()
+--     vim.cmd("colorscheme rose-pine-moon")
+--   end,
+-- }
+--return {
+--  "sainnhe/gruvbox-material",
+--  lazy = false,
+--  priority = 1000,
+--  opts = {},
+--  config = function()
+--    vim.cmd("colorscheme gruvbox-material")
+--  end
+--}
+-- return {
+--   "catppuccin/nvim",
+--   name = "catppuccin",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {
+--     flavour = "mocha", -- latte, frappe, macchiato, mocha
+--     transparent_background = false,
+--     term_colors = true,
+--     styles = {
+--       comments = { "italic" },
+--       conditionals = { "italic" },
+--       functions = { "bold" },
+--       keywords = { "bold" },
+--       strings = { "italic" },
+--       variables = {},
+--       numbers = {},
+--       operators = {},
+--     },
+--   },
+--   config = function(_, opts)
+--     require("catppuccin").setup(opts)
+--     vim.cmd.colorscheme("catppuccin")
+--   end,
 -- }
 -- return {
---     "navarasu/onedark.nvim",
---     config = function ()
---         require("onedark").setup {
---             style = "darker"
---         }
---
---         require("onedark").load()
---     end
--- }
---  return {
---      "rose-pine/neovim",
---      name = "rose-pine",
---      config = function()
---          vim.cmd("colorscheme rose-pine-moon")
---      end,
---  }
--- return {
---     "folke/tokyonight.nvim",
---     lazy = false,
---     priority = 1000,
---     opts = {},
---     config = function()
---         vim.cmd("colorscheme tokyonight-night")
---     end
+--   "shaunsingh/nord.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme nord")
+--   end
 -- }
 return {
-    "sainnhe/gruvbox-material",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-    config = function()
-        vim.cmd("colorscheme gruvbox-material")
-    end
+  "blazkowolf/gruber-darker.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd("colorscheme gruber-darker")
+  end
 }
+-- return {
+--   "thesimonho/kanagawa-paper.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme kanagawa-paper")
+--   end
+-- }

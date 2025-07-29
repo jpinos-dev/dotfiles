@@ -21,7 +21,8 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '  ', trail = '·', nbsp = '␣' }
 
 -- Keep signcolumn on by default
 vim.o.signcolumn = 'yes'
+vim.opt.colorcolumn = '80'

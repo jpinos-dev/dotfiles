@@ -15,7 +15,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
-require("user.keymaps") -- Manages the custom Keymaps 
+require("user.keymaps") -- Manages the custom Keymaps
 require("user.options") -- Manages the custom options from the user
 require("user.autocmds")
-
