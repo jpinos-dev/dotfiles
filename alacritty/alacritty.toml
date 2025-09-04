@@ -5,6 +5,8 @@ TERM = "alacritty"
 padding.x = 10
 padding.y = 10
 
+option_as_alt = "Both"
+
 opacity = 1
 blur = true
 
@@ -12,9 +14,9 @@ blur = true
 background = "#000000"
 
 [font]
-normal.family = "JetBrainsMono Nerd Font"
-normal.style = "SemiBold"
+normal.family = "RecMonoSmCasual Nerd Font"
+# normal.style = "Bold"
 
 offset.y = 4
 
-size = 18
+size = 22

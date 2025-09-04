@@ -1,9 +1,9 @@
-font-family = "Monaspace Neon"
+font-family = "RecMonoSmCasual Nerd Font"
 font-size = 27
 theme = "rose-pine-moon"
 background-opacity = 0.3
 background-blur = true
-# background = "#000000"
+background = "#000000"
 maximize = true
 fullscreen = true
 macos-non-native-fullscreen = visible-menu
