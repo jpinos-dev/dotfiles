@@ -1,5 +1,5 @@
 [env]
-TERM = "alacritty"
+# TERM = "alacritty"
 
 [window]
 padding.x = 10
@@ -7,16 +7,16 @@ padding.y = 10
 
 option_as_alt = "Both"
 
-opacity = 1
+opacity = 0.7
 blur = true
 
 [colors.primary]
 background = "#000000"
 
 [font]
-normal.family = "RecMonoSmCasual Nerd Font"
-# normal.style = "Bold"
+normal.family = "Maple Mono NF"
+normal.style = "Medium"
 
 offset.y = 4
 
-size = 22
+size = 24

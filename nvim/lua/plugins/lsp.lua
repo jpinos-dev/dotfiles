@@ -87,16 +87,20 @@ return {
           }
         },
       },
-      jdtls = {
-        capabilities = capabilities,
-        settings = {
-          format = {
-            enabled = true,
-          }
-        }
-      },
       ts_ls = {
         capabilities = capabilities,
+      },
+      angularls = {
+        capabilities = capabilities,
+      },
+      emmet_langugae_server = {
+        capabilities = capabilities,
+        filetypes = {
+          "css",
+          "html",
+          "javascript",
+          "typescript"
+        }
       },
       gopls = {
         capabilities = capabilities,
