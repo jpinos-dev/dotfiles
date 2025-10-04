@@ -2,21 +2,21 @@
 TERM = "alacritty"
 
 [window]
-padding.x = 10
-padding.y = 10
+# padding.x = 10
+# padding.y = 10
 
 option_as_alt = "Both"
 
-opacity = 0.7
-blur = true
+# opacity = 1
+# blur = true
 
 [colors.primary]
-background = "#000000"
+#background = "#000000"
 
 [font]
-normal.family = "Maple Mono NF"
-normal.style = "Medium"
+normal.family = "MartianMono Nerd Font"
+# normal.style = "Medium"
 
-offset.y = 4
+offset.y = 6
 
-size = 24
+size = 14

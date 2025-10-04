@@ -61,19 +61,35 @@
 --     vim.cmd("colorscheme gruber-darker")
 --   end
 -- }
-return {
-  "thesimonho/kanagawa-paper.nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    vim.cmd("colorscheme kanagawa-paper")
-  end
-}
+-- return {
+--   "thesimonho/kanagawa-paper.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme kanagawa-paper")
+--   end
+-- }
 -- return {
 --   "folke/tokyonight.nvim",
 --   lazy = false,
 --   priority = 1000,
 --   config = function()
 --     vim.cmd("colorscheme tokyonight")
+--   end
+-- }
+return {
+  "oahlen/iceberg.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd("colorscheme iceberg")
+  end
+}
+-- return {
+--   "vague2k/vague.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme vague")
 --   end
 -- }

@@ -4,12 +4,13 @@ local buffers_utils = require("utils.buffers")
 -- Remove previous <Space> map
 vim.keymap.set("n", "<Space>", "<Nop>", { silent = true, remap = false })
 
-vim.keymap.set("n", "<Leader>e", ":Explore<CR>")
+-- vim.keymap.set("n", "<Leader>e", ":Explore<CR>")
 
 --- Telescope Mappings
 vim.keymap.set("n", "<Leader>ff", builtin_telescope.find_files, { desc = "Telescope find files" })
 vim.keymap.set("n", "<Leader>fg", builtin_telescope.git_files, { desc = "Telescope find git files" })
 vim.keymap.set("n", "<Leader>fp", builtin_telescope.diagnostics, { desc = "Telescope find errors" })
+vim.keymap.set("n", "<Leader>lg", builtin_telescope.live_grep, { desc = "Telescope live grep" })
 
 --- Formatter Mappings
 vim.keymap.set("n", "<Leader>f", ":Format<CR>", { silent = true })
@@ -39,3 +40,6 @@ end)
 
 -- Search ("/")
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+-- Oil Mappings
+vim.keymap.set("n", "<leader>e", ":Oil<CR>", { desc = "Open Oil file explorer" })

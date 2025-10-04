@@ -1,7 +1,6 @@
-font-family = "RecMonoSmCasual Nerd Font"
-font-size = 27
-theme = "rose-pine-moon"
-background-opacity = 0.3
+font-family = "BigBlueTerm437 Nerd Font"
+font-size = 12
+background-opacity = 0.6
 background-blur = true
 background = "#000000"
 maximize = true
