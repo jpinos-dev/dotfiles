@@ -77,19 +77,19 @@
 --     vim.cmd("colorscheme tokyonight")
 --   end
 -- }
-return {
-  "oahlen/iceberg.nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    vim.cmd("colorscheme iceberg")
-  end
-}
 -- return {
---   "vague2k/vague.nvim",
+--   "oahlen/iceberg.nvim",
 --   lazy = false,
 --   priority = 1000,
 --   config = function()
---     vim.cmd("colorscheme vague")
+--     vim.cmd("colorscheme iceberg")
 --   end
 -- }
+return {
+  "vague2k/vague.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd("colorscheme vague")
+  end
+}
