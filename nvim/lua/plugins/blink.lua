@@ -30,7 +30,16 @@ return {
     },
 
     completion = {
-      documentation = { auto_show = false, auto_show_delay_ms = 500 },
+      documentation = {
+        draw = function(opts)
+          if opts.item and opts.item.documentation and opts.item.documentation.value then
+            local out = require("pretty_hover.parser").parse(opts.item.documentation.value)
+            opts.item.documentation.value = out:string()
+          end
+
+          opts.default_implementation(opts)
+        end
+      },
     },
 
     sources = {

@@ -20,31 +20,31 @@
 --    vim.cmd("colorscheme gruvbox-material")
 --  end
 --}
--- return {
---   "catppuccin/nvim",
---   name = "catppuccin",
---   lazy = false,
---   priority = 1000,
---   opts = {
---     flavour = "mocha", -- latte, frappe, macchiato, mocha
---     transparent_background = true,
---     term_colors = true,
---     styles = {
---       comments = { "italic" },
---       conditionals = { "italic" },
---       functions = { "bold" },
---       keywords = { "bold" },
---       strings = { "italic" },
---       variables = {},
---       numbers = {},
---       operators = {},
---     },
---   },
---   config = function(_, opts)
---     require("catppuccin").setup(opts)
---     vim.cmd.colorscheme("catppuccin")
---   end,
--- }
+return {
+  "catppuccin/nvim",
+  name = "catppuccin",
+  lazy = false,
+  priority = 1000,
+  opts = {
+    flavour = "mocha", -- latte, frappe, macchiato, mocha
+    transparent_background = true,
+    term_colors = true,
+    styles = {
+      comments = { "italic" },
+      conditionals = { "italic" },
+      functions = { "bold" },
+      keywords = { "bold" },
+      strings = { "italic" },
+      variables = {},
+      numbers = {},
+      operators = {},
+    },
+  },
+  config = function(_, opts)
+    require("catppuccin").setup(opts)
+    vim.cmd.colorscheme("catppuccin")
+  end,
+}
 -- return {
 --   "shaunsingh/nord.nvim",
 --   lazy = false,
@@ -53,14 +53,14 @@
 --     vim.cmd("colorscheme nord")
 --   end
 -- }
--- return {
---   "blazkowolf/gruber-darker.nvim",
---   lazy = false,
---   priority = 1000,
---   config = function()
---     vim.cmd("colorscheme gruber-darker")
---   end
--- }
+--return {
+--  "blazkowolf/gruber-darker.nvim",
+--  lazy = false,
+--  priority = 1000,
+--  config = function()
+--    vim.cmd("colorscheme gruber-darker")
+--  end
+--}
 -- return {
 --   "thesimonho/kanagawa-paper.nvim",
 --   lazy = false,
@@ -85,11 +85,11 @@
 --     vim.cmd("colorscheme iceberg")
 --   end
 -- }
-return {
-  "vague2k/vague.nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    vim.cmd("colorscheme vague")
-  end
-}
+-- return {
+--   "vague2k/vague.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme vague")
+--   end
+-- }
