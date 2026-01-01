@@ -89,39 +89,6 @@ return {
           }
         },
       },
-      ts_ls = {
-        capabilities = capabilities,
-      },
-      angularls = {
-        capabilities = capabilities,
-      },
-      emmet_langugae_server = {
-        capabilities = capabilities,
-        filetypes = {
-          "css",
-          "html",
-          "javascript",
-          "typescript"
-        }
-      },
-      gopls = {
-        capabilities = capabilities,
-        settings = {
-          gopls = {
-            semanticTokens = true,
-          }
-        }
-      },
-      powershell_es = {
-        capabilities = capabilities,
-        bundle_path = "~/Documents/Desarrollo/SDKs/PowerShellEditorServices"
-      },
-      bashls = {
-        capabilities = capabilities,
-      },
-      sqlls = {
-        capabilities = capabilities,
-      },
       rust_analyzer = {
         capabilities = capabilities,
         settings = {
@@ -137,22 +104,14 @@ return {
       },
     }
 
-    local ensure_installed = vim.tbl_keys(servers or {})
-    vim.list_extend(ensure_installed, {
-      'stylua'
-    })
-
-
     require('mason-lspconfig').setup {
-      ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
+      ensure_installed = {},
       automatic_installation = false,
       handlers = {
         function(server_name)
           local server = servers[server_name] or {}
-          -- This handles overriding only values explicitly passed
-          -- by the server configuration above. Useful when disabling
-          -- certain features of an LSP (for example, turning off formatting for ts_ls)
           server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
+          -- vim.lsp.enable(server)
           require('lspconfig')[server_name].setup(server)
         end,
       },
@@ -161,9 +120,7 @@ return {
   dependencies = {
     { 'mason-org/mason.nvim', opts = {} },
     'mason-org/mason-lspconfig.nvim',
-
     { 'j-hui/fidget.nvim',    opts = {} },
-
     'saghen/blink.cmp',
   }
 }
